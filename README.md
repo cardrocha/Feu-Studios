@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# PROJETO INTEGRADOR – FRONT-END COM REACT  
+## Portfólio Completo – Feu Studios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📌 Identificação do Projeto
+- **Empresa:** Feu Studios  
+- **Curso:** Desenvolvimento Front-End com React  
+- **Turma:** Turma 06 RJ – C1  
+- **Projeto:** Site Institucional (Portfólio Completo)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🖥️ Visão Geral
+Aplicação web no formato **SPA (Single Page Application)**, com layout responsivo, navegação fluida e páginas institucionais.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 👥 Equipe
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| UI/UX | React e Estilização | Lógica e TypeScript |
+|-------|---------------------|---------------------|
+| Allan Ferreira Sant Ana | Christiane Mello da Cruz | Jonatan Pereira da Silva |
+| Lorena Thevenard Senra | Maykon Heleno da Cunha Máximo | Mallyssa dos Santos Holanda |
+| Vanessa Cristina de Oliveira | Ricardo Rocha Araújo | Yuri Teixeira Arruda de Aguiar |
+|  | Thaina Fontanezi de Oliveira |  |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Fork do Repositório
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Para começar a codificar, você deve fazer um fork deste repositório:
+
+1. Clique no botão **Fork** no canto superior direito da página.
+2. Isso criará uma cópia do repositório em sua própria conta do GitHub.
+
+## Instalar localmente
+
+Depois de fazer o fork do repositório, clone a sua cópia para o ambiente local usando o comando:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Instalando as dependências
+Depois do clone, instalamos as dependências para garantir que o projeto tenha todas as bibliotecas e pacotes necessários para rodar corretamente.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install ou npm i
 ```
+## Executando o projeto
+Depois de instalar as dependêcias, podemos executar o projeto localmente.
+```bash
+npm run dev
+```
+
+## Trabalhando com: Branch, Stage, Commit, Push e Pull Request
+Para criar e trocar para uma nova branch, use o seguinte comando:
+
+```bash
+git checkout -b nome-da-branch
+```
+
+> **[!IMPORTANT]**
+> 
+> Antes de fazer qualquer alteração, certifique-se de que você trocou a **branch**. Isso é igualmente importante antes de subir as alterações ao repositório.
+
+Depois de fazer alterações no projeto, é hora de adicioná-las ao stage. Você pode fazer isso de duas maneiras: adicionando **todas as alterações de uma vez** ou **apenas os arquivos modificados individualmente**.
+
+```bash
+git add .
+ou
+git add nome-do-arquivo
+```
+Agora com o comando **git commit** podemos incluir todas as mudanças que foram adicionadas ao índice.
+```bash
+git commit -m "meu commit"
+```
+Depois de criar um commit, o próximo passo é enviar as alterações para o repositório remoto com o comando:
+```bash
+git push origin nome-da-branch
+```
+
+Feito! Agora vá para a página do repositório no GitHub e clique no botão **Compare & pull request**. Descreva suas alterações e envie o pull request para revisão.
+
