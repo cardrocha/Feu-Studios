@@ -1,35 +1,42 @@
 export interface Game {
-  id: number
-  title: string
-  genre: string
-  platform: string
-  releaseYear: number
-  image: string
+  id: string;
+  title: string;
+  description: string;
+  genre: string;
+  releaseDate: string;
+  status: 'released' | 'in-development';
+  steamUrl?: string;
+  coverImage: string;
+  tags: string[];
+  developer: string;
+  publisher: string;
 }
 
 export const games: Game[] = [
   {
-    id: 1,
-    title: "The Legend of Zelda: Breath of the Wild",
-    genre: "Aventura",
-    platform: "Nintendo Switch",
-    releaseYear: 2017,
-    image: "https://upload.wikimedia.org/wikipedia/en/0/0b/The_Legend_of_Zelda_Breath_of_the_Wild.jpg"
+    id: '1',
+    title: 'O Show de Zozo',
+    description: 'Um jogo de horror e puzzles em primeira pessoa que vai testar seus nervos. Entre no show macabro de Zozo e desvende os mistérios aterrorizantes que aguardam nas sombras.',
+    genre: 'Ação e Aventura',
+    releaseDate: '21 de fevereiro de 2025',
+    status: 'released',
+    steamUrl: 'https://store.steampowered.com/app/3226180/O_Show_de_Zozo/',
+    coverImage: 'https://images.unsplash.com/photo-1618609378039-b572f64c5b42?w=800&h=600&fit=crop',
+    tags: ['Horror', 'Puzzles', 'Primeira Pessoa', 'Mistério', 'Atmosférico'],
+    developer: 'Douglas Feu',
+    publisher: 'Feu Studios'
   },
   {
-    id: 2,
-    title: "God of War",
-    genre: "Ação",
-    platform: "PlayStation",
-    releaseYear: 2018,
-    image: "https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg"
-  },
-  {
-    id: 3,
-    title: "Minecraft",
-    genre: "Sandbox",
-    platform: "Multiplataforma",
-    releaseYear: 2011,
-    image: "https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+    id: '2',
+    title: 'O Medo Desconhecido',
+    description: 'The Unknown Fear é uma experiência de ação e aventura com narrativa focada em mistério e suspense. Explore ambientes sombrios e desvende os segredos que atormentam a cidade.',
+    genre: 'Ação e Aventura',
+    releaseDate: '11 de janeiro de 2024',
+    status: 'released',
+    steamUrl: 'https://store.steampowered.com/app/2619300/O_Medo_Desconhecido/',
+    coverImage: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=600&fit=crop',
+    tags: ['Ação', 'Aventura', 'Mistério', 'Suspense', 'Narrativa'],
+    developer: 'Douglas Feu',
+    publisher: 'Feu Studios'
   }
-]
+];
