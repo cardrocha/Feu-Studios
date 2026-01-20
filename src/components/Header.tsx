@@ -22,6 +22,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-blue-500/20">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
               <Gamepad2 className="w-8 h-8 text-blue-500 group-hover:text-blue-400 transition-colors" />
@@ -56,11 +57,11 @@ export function Header() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
-            aria-label="Toggle menu"
+            aria-label="Abrir menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
